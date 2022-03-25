@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head> 
+<body> 
+  <div id="principal">
+     <div id="card">
+       <div id="titulo-card">
+         <h3>FORMULARIO
+         </h3>
+       </div>
+       <div id="datos">
+         <form action="">
+           <div class="icon" onclick="VerTabla()">
+            <i class="fa fa-group" ></i>
+           </div>
+          
+          <p id="texto">Por favor llenar el formulario</p>
+
+          <label for="id">ID</label>
+          <input type="number" name="id" id="id" min="0"pattern="[0-9]+" required>
+  
+          <label for="id">Nombre</label>
+          <input type="text" name="nombre" id="nombre">
+  
+          <label for="id">Apellido</label>
+          <input type="text" name="apellido" id="apellido">
+  
+          <label for="id">Direccion</label>
+          <input type="text" name="Direccion" id="direccion">
+         
+        
+       </div>
+       <div id="btn-space">
+           <div id="btn" onclick="validar()">
+               <h3>ENVIAR</h3>
+           </div>
+        </div>
+      </form>
+     </div>
+  </div>
+  <div id="secundario">
+    <div id="secundario-titulo">
+      <h1 id="punto-mostrar">Tabla de registros</h1>
+    </div>
+    <div id="cont">
+    <table id="tabla" >
+      <thead>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Direccion</th>
+      </thead>
+      <tbody id="tabla-cuerpo">
+        
+      </tbody>
+    </table>
+  </div>
+    <button onclick="back()">Volver</button>
+  </div>                 
+  <i class="fa fa-git-square"></i>
+</body>
+</html>
